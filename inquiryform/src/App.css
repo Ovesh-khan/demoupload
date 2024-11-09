@@ -1,0 +1,158 @@
+/* App.css */
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Shared styling */
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #007bff;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Enquiry Section */
+.enquiry-section, .book-section {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry-form,
+.contact-options {
+  margin-top: 16px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Book Section buttons */
+.call-us-btn,
+.chat-us-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #17a2b8;
+}
+
+.call-us-btn:hover,
+.chat-us-btn:hover {
+  background-color: #138496;
+}
+
+/* Desktop-only and mobile-only */
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: block;
+}
+
+/* Responsive styling */
+@media (min-width: 769px) {
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .inquiry-form,
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .enquiry-section, .book-section {
+    margin-bottom: 20px;
+  }
+}
+
+.error {
+  border: 1px solid red;
+  background-color: #ffe6e6;
+}
+.submission-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* Error styling */
+.error-input {
+  border: 1px solid red;
+  background-color: #ffe6e6;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+/* Submission message styling */
+.submission-message {
+  color: green;
+  margin-top: 10px;
+}
